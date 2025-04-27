@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './IEEE_NSM.css'; // We'll create this CSS file next
 
 const IEEE_NSM = () => {
@@ -34,7 +35,6 @@ const IEEE_NSM = () => {
 
         <div className="cta-section">
           <button className="cta-button">Become a Member</button>
-          <button className="cta-button">Contact Us</button>
         </div>
 
         <div className="contact-form">
@@ -62,7 +62,9 @@ const IEEE_NSM = () => {
       </main>
 
       <footer className="footer">
-        <div className="footer-logo">IEEE-NSM</div>
+        
+        <div className="footer-tag">IEEE-NSM</div>
+        
       </footer>
     </div>
   );
