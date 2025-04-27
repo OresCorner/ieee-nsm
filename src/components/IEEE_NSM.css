@@ -1,147 +1,213 @@
-/* IEEE_NSM.css */
+@import url('https://fonts.google.com/share?selection.family=Cactus+Classical+Serif|Kantumruy+Pro:ital,wght@0,100..700;1,100..700|Noto+Sans+Mono:wdth,wght@75,100..900|PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto+Mono:ital,wght@0,100..700;1,100..700');
+@import url('https://fonts.google.com/share?selection.family=Cactus+Classical+Serif|Gloock|Kantumruy+Pro:ital,wght@0,100..700;1,100..700|Noto+Sans+Mono:wdth,wght@75,100..900|PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto+Mono:ital,wght@0,100..700;1,100..700');
 
+/* General Styles */
 .ieee-nsm-container {
-    font-family: 'Arial', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #333;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00629B; /* IEEE blue */
-  }
-  
-  .navigation a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .navigation a:hover {
-    color: #00629B;
-  }
-  
-  .main-content {
-    margin: 40px 0;
-  }
-  
-  .institute-name {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 40px;
-    color: #00629B;
-  }
-  
-  .mission-section {
-    margin: 60px 0;
-  }
-  
-  .mission-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #00629B;
-  }
-  
-  .mission-text {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-  }
-  
-  .cta-section {
-    margin: 60px 0;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .cta-button {
-    padding: 12px 24px;
-    background-color: #00629B;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #004f7a;
-  }
-  
-  .contact-form {
-    background-color: #3385AD;
-    padding: 20px 0px;
-    width: 100%;
-    margin: 60px 0;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
 
-  }
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #00629B; /* IEEE blue */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.logo-text{
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  position: relative;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black */
+}
+
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.institute-name {
+  font-family: "Gloock", serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.institute-subtext{
+  color: white;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.mission-section h2 {
+  color: #00629B;
+  margin-bottom: 20px;
+}
+
+.mission-text {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.img-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img-section img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.cta-button {
+  background-color: #00629B;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004b7c;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container{
+  background-color: #3385AD;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #00629B;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #00629B;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #00629B;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
   
-  .contact-form h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    color: white;
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-  
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    padding: 12px 24px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-button:hover {
-    background-color: #004f7a;
-  }
-  
-  .footer {
-    background-color: #004B96;
-    margin-top: 60px;
-    padding: 20px 0;
-    border-top: 1px solid #eee;
-    text-align: center;
-  }
-  
-  .footer-tag {
-    font-size: 20px;
-    font-weight: bold;
-    color: #FFFFFF;
-  }
+}
+
+.footer-tag {
+  margin-top: 20px;
+  font-weight: bold;
+}

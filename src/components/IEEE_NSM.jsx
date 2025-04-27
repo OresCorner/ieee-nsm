@@ -1,12 +1,18 @@
 import React from 'react';
-
+import footerlogo from '../images/whitecoog.png';
+import homepagebanner from '../images/ieeensmbanner.png';
+import friends from '../images/smilingfriends.png';
+import liv from '../images/Oliviasmiling.png';
 import './IEEE_NSM.css'; // We'll create this CSS file next
 
 const IEEE_NSM = () => {
   return (
     <div className="ieee-nsm-container">
       <header className="header">
-        <div className="logo">IEEE-NSM</div>
+        <div className="logo">
+          <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
+          <span className="logo-text">IEEE-NSM</span>
+        </div>
         <nav className="navigation">
           <a href="#">Home</a>
           <a href="#">Officers</a>
@@ -16,11 +22,20 @@ const IEEE_NSM = () => {
       </header>
 
       <main className="main-content">
-        <div className="hero-section">
-          <h1 className="institute-name">
-            Institute of Electrical<br />
-            and Electronics
-          </h1>
+      <div className="hero-section">
+          <div className="hero-image-container">
+            <img src={homepagebanner} alt="Students smiling at Coding Olympics" className="hero-image"/>
+            <div className="hero-overlay"></div>
+            <div className="hero-text-overlay">
+              <h4 className="institute-subtext">
+                University of Houston
+              </h4>
+              <h1 className="institute-name">
+                Institute of Electrical<br />
+                and Electronics
+              </h1>
+            </div>
+          </div>
         </div>
 
         <div className="mission-section">
@@ -33,10 +48,15 @@ const IEEE_NSM = () => {
           </p>
         </div>
 
+        <div className="img-section">
+          <img src={liv}/>
+          <img src={friends}/>
+        </div>
+
         <div className="cta-section">
           <button className="cta-button">Become a Member</button>
         </div>
-
+        <div className="contact-container">
         <div className="contact-form">
           <h2>Contact Us</h2>
           <form>
@@ -59,10 +79,11 @@ const IEEE_NSM = () => {
             <button type="submit" className="submit-button">Send</button>
           </form>
         </div>
+        </div>
       </main>
 
       <footer className="footer">
-        
+      <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
         <div className="footer-tag">IEEE-NSM</div>
         
       </footer>
