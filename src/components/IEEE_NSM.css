@@ -2,6 +2,10 @@
 @import url('https://fonts.google.com/share?selection.family=Cactus+Classical+Serif|Gloock|Kantumruy+Pro:ital,wght@0,100..700;1,100..700|Noto+Sans+Mono:wdth,wght@75,100..900|PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto+Mono:ital,wght@0,100..700;1,100..700');
 
 /* General Styles */
+label{
+  color: white;
+}
+
 .ieee-nsm-container {
   font-family: 'Arial', sans-serif;
   max-width: 1200px;
@@ -101,18 +105,45 @@
 
 /* Mission Section */
 .mission-section {
-  padding: 40px 20px;
+  position: relative;
+  padding: 40px;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-container {
+  position: relative;
+  padding: 0 40px; /* Space for quotes */
+}
+
+.quotes:nth-of-type(1){
+  top: 0;
+  left: 0;
+  width: 3vh;
+  height: 3vh;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.quotes:nth-of-type(2){
+  width: 3vh;
+  height: 3vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .mission-section h2 {
   color: #00629B;
   margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .mission-text {
   max-width: 800px;
   margin: 0 auto;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -125,7 +156,8 @@
 }
 
 .img-section img {
-  max-width: 45%;
+  max-width: 35%;
+
   height: auto;
   border-radius: 8px;
 }
@@ -164,7 +196,7 @@
 
 .contact-form h2 {
   text-align: center;
-  color: #00629B;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -200,14 +232,34 @@
 
 /* Footer */
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #00629B;
   color: white;
   padding: 30px 20px;
-  text-align: center;
-  
 }
 
+.footer-left{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social{
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon{
+  height: 30px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+
+
 .footer-tag {
-  margin-top: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
 }

@@ -3,6 +3,10 @@ import footerlogo from '../images/whitecoog.png';
 import homepagebanner from '../images/ieeensmbanner.png';
 import friends from '../images/smilingfriends.png';
 import liv from '../images/Oliviasmiling.png';
+import doublequotes from '../images/double-quotes.png';
+import instagram from '../images/Group 3.png';
+import linkedin from '../images/image 10.png';
+import discord from '../images/image 11.png';
 import './IEEE_NSM.css'; // We'll create this CSS file next
 
 const IEEE_NSM = () => {
@@ -32,7 +36,7 @@ const IEEE_NSM = () => {
               </h4>
               <h1 className="institute-name">
                 Institute of Electrical<br />
-                and Electronics
+                and Electronics Engineers
               </h1>
             </div>
           </div>
@@ -40,12 +44,16 @@ const IEEE_NSM = () => {
 
         <div className="mission-section">
           <h2>Our Mission</h2>
+          <div className="quote-container">
+          <img className="quotes" src={doublequotes}/>
           <p className="mission-text">
             IEEE's core purpose is to foster technological innovation
             and excellence for the We strive to create a space were
             students can find community and more accessible
             opportunities for research and competitions.of humanity.
           </p>
+          <img className="quotes" src={doublequotes}/>
+          </div>
         </div>
 
         <div className="img-section">
@@ -83,9 +91,15 @@ const IEEE_NSM = () => {
       </main>
 
       <footer className="footer">
-      <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
-        <div className="footer-tag">IEEE-NSM</div>
-        
+        <div className="footer-left">
+          <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
+          <div className="footer-tag">IEEE-NSM</div>
+        </div>
+        <div className="footer-social">
+          <a target="_blank" href="https://www.instagram.com/ieee_nsm/"><img className="social-icon" src={instagram}/></a>
+          <a target="_blank" href="https://www.linkedin.com/company/ieee-nsm/"><img className="social-icon" src={linkedin}/></a>
+          <a target="_blank" href="https://discord.gg/nXx9UtEeyy"><img className="social-icon" src={discord}/></a>
+        </div>
       </footer>
     </div>
   );
