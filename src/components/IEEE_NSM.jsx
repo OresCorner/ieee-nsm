@@ -1,40 +1,24 @@
 import React from 'react';
-import footerlogo from '../images/whitecoog.png';
+import Layout from './Layout';
 import homepagebanner from '../images/ieeensmbanner.png';
 import friends from '../images/smilingfriends.png';
 import liv from '../images/Oliviasmiling.png';
 import doublequotes from '../images/double-quotes.png';
-import instagram from '../images/Group 3.png';
-import linkedin from '../images/image 10.png';
-import discord from '../images/image 11.png';
-import './IEEE_NSM.css'; // We'll create this CSS file next
+import './IEEE_NSM.css';
+import './universal.css';
 
 const IEEE_NSM = () => {
   return (
-    <div className="ieee-nsm-container">
-      <header className="header">
-        <div className="logo">
-          <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
-          <span className="logo-text">IEEE-NSM</span>
-        </div>
-        <nav className="navigation">
-          <a href="#">Home</a>
-          <a href="#">Officers</a>
-          <a href="#">About</a>
-          <a href="#">Events</a>
-        </nav>
-      </header>
-
-      <main className="main-content">
+    <Layout>
       <div className="hero-section">
           <div className="hero-image-container">
             <img src={homepagebanner} alt="Students smiling at Coding Olympics" className="hero-image"/>
             <div className="hero-overlay"></div>
             <div className="hero-text-overlay">
-              <h4 className="institute-subtext">
+              <h4 className="standard-subtext">
                 University of Houston
               </h4>
-              <h1 className="institute-name">
+              <h1 className="opening-text">
                 Institute of Electrical<br />
                 and Electronics Engineers
               </h1>
@@ -67,41 +51,36 @@ const IEEE_NSM = () => {
         <div className="contact-container">
         <div className="contact-form">
           <h2>Contact Us</h2>
-          <form>
+          <form action="https://formsubmit.co/nsm.ieeeuh@gmail.com" method="POST">
             <div className="form-group">
               <label htmlFor="name">Name (required)</label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" name="name" required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email (required)</label>
-              <input type="email" id="email" required />
+              <input type="email" id="email" name="email" required />
             </div>
             <div className="form-group">
               <label htmlFor="role">I am...</label>
-              <select id="role">
-                <option value="student">Student</option>
-                <option value="professional">Professional</option>
+              <select name="role" id="role">
+                <option value="student">A Student</option>
+                <option value="sponsor">A Sponsor</option>
+                <option value="company representative">A Company Representative</option>
+                <option value="alumni">An Alumni</option>
                 <option value="other">Other</option>
               </select>
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message (Required)</label>
+              <textarea id="message" name="message" rows="4" cols="50">
+
+              </textarea>
             </div>
             <button type="submit" className="submit-button">Send</button>
           </form>
         </div>
         </div>
-      </main>
-
-      <footer className="footer">
-        <div className="footer-left">
-          <img className="logo-img" src={footerlogo} alt="IEEE-NSM logo"/>
-          <div className="footer-tag">IEEE-NSM</div>
-        </div>
-        <div className="footer-social">
-          <a target="_blank" href="https://www.instagram.com/ieee_nsm/"><img className="social-icon" src={instagram}/></a>
-          <a target="_blank" href="https://www.linkedin.com/company/ieee-nsm/"><img className="social-icon" src={linkedin}/></a>
-          <a target="_blank" href="https://discord.gg/nXx9UtEeyy"><img className="social-icon" src={discord}/></a>
-        </div>
-      </footer>
-    </div>
+    </Layout>
   );
 };
 

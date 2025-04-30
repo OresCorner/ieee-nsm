@@ -54,11 +54,15 @@ label{
 /* Hero Section */
 .hero-section {
   width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image-container {
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -84,17 +88,6 @@ label{
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-}
-
-.institute-name {
-  font-family: "Gloock", serif;
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.institute-subtext{
-  color: white;
 }
 
 .hero-section img {

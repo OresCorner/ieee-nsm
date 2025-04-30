@@ -1,0 +1,80 @@
+@import url('https://fonts.google.com/share?selection.family=Cactus+Classical+Serif|Kantumruy+Pro:ital,wght@0,100..700;1,100..700|Noto+Sans+Mono:wdth,wght@75,100..900|PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto+Mono:ital,wght@0,100..700;1,100..700');
+@import url('https://fonts.google.com/share?selection.family=Cactus+Classical+Serif|Gloock|Kantumruy+Pro:ital,wght@0,100..700;1,100..700|Noto+Sans+Mono:wdth,wght@75,100..900|PT+Serif:ital,wght@0,400;0,700;1,400;1,700|Roboto+Mono:ital,wght@0,100..700;1,100..700');
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap:2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    flex: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.meet-officers{
+    background-color: #3385AD;
+    padding: 3rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+.meet-officers h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-text h1{
+    color:#3385AD;
+    font-size: 45px;
+    margin-bottom: 1rem;
+}
+
+.hero-text p{
+    font-family: "Merriweather", serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.officers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.officer-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.officer-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.officer-card h3 {
+    margin: 0.5rem 0;
+    color: #3385AD;
+}
